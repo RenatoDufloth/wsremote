@@ -2,3 +2,5 @@ Aluno
 Curso
 Turma
 Professor
+
+Otimo trabalho, proximo passo é descobrir as 6 dezenas
