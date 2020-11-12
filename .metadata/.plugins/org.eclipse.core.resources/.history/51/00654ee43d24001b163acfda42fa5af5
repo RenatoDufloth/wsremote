@@ -1,0 +1,30 @@
+package br.com.formula1.implementacao;
+
+import br.com.formula1.modelo.Carro;
+
+public class TesteCarro {
+
+	public static void main(String[] args) {
+		
+		//Instanciando um objeto => criar as reparticoes do objeto
+		Carro objeto = new Carro();
+		
+		objeto.preencherEscuderia("Ferrari");
+		
+		System.out.println(objeto.retornarEscuderia());
+		
+		objeto.preencherNumero((short) 1);
+		
+		System.out.println(objeto.retornarNumero());
+		
+		objeto.ligar();
+		
+		System.out.println(objeto.retornaStatus());
+		
+		objeto.desligar();
+		
+		System.out.println(objeto.retornaStatus());
+
+	}
+
+}

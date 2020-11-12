@@ -1,0 +1,45 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+		int ano = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano"));
+		int mes = Integer.parseInt(JOptionPane.showInputDialog("Digite o mês"));
+		int dia = Integer.parseInt(JOptionPane.showInputDialog("Digite o dia"));
+
+
+		while (ano < 1900 || ano > 2002) {
+			ano = Integer.parseInt(JOptionPane.showInputDialog("Digite um ano valido"));
+		}
+
+		while (mes > 12) {
+			mes = Integer.parseInt(JOptionPane.showInputDialog("Digite um mes valido"));
+		}
+
+		if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 ||mes == 12) {
+			while (dia > 31) {
+				dia = Integer.parseInt(JOptionPane.showInputDialog("Digite um dia valido"));			
+			}
+		}
+		else if (mes == 4 || mes == 6 || mes == 9 || mes == 11) {
+			while (dia > 30) {
+				dia = Integer.parseInt(JOptionPane.showInputDialog("Digite um dia valido"));
+			}
+		}
+		else 
+			while (dia > 29) {
+				dia = Integer.parseInt(JOptionPane.showInputDialog("Digite um dia valido"));
+
+			}
+
+		System.out.print(dia+"/"+mes+"/"+ano);
+
+
+
+	}
+
+}
+
+

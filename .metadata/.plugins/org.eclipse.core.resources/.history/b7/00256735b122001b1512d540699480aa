@@ -1,0 +1,39 @@
+package variaveis;
+
+public class Tipos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String nome = "Renato Dufloth";	
+		
+		int idade = 29;
+		
+		double altura = 1.75;
+		
+		double peso = 76;
+		
+		double imc = peso / (altura * 2);
+		
+		System.out.println("Nome: " + nome);
+		System.out.println("Idade: " + idade + " Anos");
+		System.out.println("Altura: " + altura + " Metros");
+		System.out.println("Peso: " + peso + " Kilos");
+		System.out.println("IMC: " + imc );
+		
+		System.out.printf("imc: %.2f\n", imc);
+		System.out.printf("%s seu imc é: %.2f", nome, imc);
+		// no printf() usamos:
+		// %s para string
+		// %f para numeros reais
+		// %d para numeros inteiros
+		
+		
+	
+		
+		
+		
+		
+	}
+
+}

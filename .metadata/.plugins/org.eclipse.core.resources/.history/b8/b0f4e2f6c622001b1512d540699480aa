@@ -1,0 +1,31 @@
+package variaveis;
+
+public class ManipulaString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String email = "xpTo@Itau-UniBanco.cOm.Br";
+		
+		System.out.println("Original: "+ email + 
+				"\nMinusculo: " + email.toLowerCase() + 
+				"\nMaiscula: " + email.toUpperCase() + 
+				"\nQtde de Caracteres: " + email.length() + 
+				"\nTem arroba?: "+ email.contains("@"));
+        System.out.println("Posição do @: " + email.indexOf("@"));
+        System.out.println("Do 2º até 4º: " + email.substring(1,5));
+        
+       
+        int metade_email = email.length() / 2;
+        
+        System.out.println("Primeira metade do email: " + email.substring(0,metade_email));
+        
+        System.out.println("usuario do email: " + email.substring(0,email.indexOf("@")));
+        
+        System.out.println("Servidor: " + email.substring(email.indexOf("@")+1,email.length()));
+        
+        System.out.println("Comparação: " + email.equals(email));
+        
+	}
+
+}

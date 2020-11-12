@@ -1,0 +1,36 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+	
+	int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite primeiro número"));
+	
+	String op = JOptionPane.showInputDialog("Digite uma operação matemática");
+		
+	int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite segundo número"));
+	
+	
+	
+	if (op != "/" && numero2 != 0) {
+		if (op.contains("+"))
+			System.out.print("Resultado = " + (numero1 + numero2));
+		else if (op.contains("-"))
+			System.out.print("Resultado = " + (numero1 - numero2));
+		else if (op.contains("*"))
+			System.out.print("Resultado = " + (numero1 * numero2));
+		else if (op.contains("/"))
+			System.out.print("Resultado = " + (numero1 / numero2));
+		else
+			System.out.print("deu ruim");
+	}
+	else
+		System.out.print("Erro, divisão por 0");
+		
+	
+	
+	}
+
+}

@@ -1,0 +1,41 @@
+package br.com.liveup.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.liveup.modelo.Elevador;
+
+public class TesteElevador {
+
+	public static void main(String[] args) {
+		Elevador objeto = new Elevador();
+		
+		objeto.preencherNome(JOptionPane.showInputDialog("Nome"));
+		objeto.andarMaximo(Integer.parseInt(JOptionPane.showInputDialog("Andar Maximo")));
+		objeto.andarMinimo(Integer.parseInt(JOptionPane.showInputDialog("Andar Minimo")));
+		objeto.preencherCapacidade(Integer.parseInt(JOptionPane.showInputDialog("Capacidade de Pessoas")));
+		
+		objeto.entrar(Integer.parseInt(JOptionPane.showInputDialog("Qtde de pessoas entrando")));
+		objeto.sair(Integer.parseInt(JOptionPane.showInputDialog("Qtde de pessoas saindo")));
+		
+		objeto.preencherAndarAtual(Integer.parseInt(JOptionPane.showInputDialog("Andar Atual")));
+		
+		//objeto.subir();
+		//objeto.subir();
+		//objeto.subir();
+		//objeto.subir();
+		//objeto.subir();
+		objeto.descer();
+		objeto.descer();
+		objeto.descer();
+		objeto.descer();
+		objeto.descer();
+		objeto.descer();
+		objeto.descer();
+		
+		
+		
+		System.out.println(objeto.retornarTudo());
+		
+	}
+
+}

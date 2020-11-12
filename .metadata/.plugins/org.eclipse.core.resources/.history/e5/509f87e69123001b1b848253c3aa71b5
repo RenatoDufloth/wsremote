@@ -1,0 +1,13 @@
+package repeticao;
+
+public class ExemploFor {
+
+	public static void main(String[] args) {
+
+		for (int cont=100;cont>0;cont-=1) {
+			System.out.println("Valor " + cont);
+		}
+
+	}
+
+}

@@ -1,0 +1,68 @@
+package br.com.formula1.modelo;
+
+public class Carro {
+	
+	private String escuderia;
+	private short numero;
+	private String cor;
+	private float velocidadeAtual;
+	private float valor;
+	private boolean status;
+	
+	
+	//Sintexa do método no Java
+	//<modificador> <Tipo do Retorno> <nome do método> (<Tipo do Param> <nome do Param>)
+	
+	public void preencherEscuderia(String param) {
+		escuderia=param.toUpperCase();
+	}
+	
+	public String retornarEscuderia() {
+		return escuderia;
+	}
+	
+	public void preencherNumero(short param) {
+		if(param > 0) {
+		numero = param;
+		}
+	}
+	
+	public short retornarNumero() {
+		return numero;
+	}
+	
+	public String ligar() {
+		status = true;
+		//System.out.println("Ligado");
+		return "Ligado";
+		
+	}
+	public String desligar() {
+		status = false;
+		//System.out.println("Desligado");
+		return "Desligado";
+	}
+	public boolean retornaStatus(){
+		return status;
+	}
+	
+	public void preencherValor(float param) {
+		valor = param;
+	}
+	public float retornaPromocao() {
+		return valor - (100/10);
+		
+	}
+	public void preencherBasico(short param, String param2, float param3) {
+		numero = param;
+		escuderia = param2;
+		valor = param3;
+	}
+		
+	
+
+	
+	
+	
+
+}

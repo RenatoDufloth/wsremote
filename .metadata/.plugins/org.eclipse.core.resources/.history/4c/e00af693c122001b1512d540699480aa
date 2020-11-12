@@ -1,0 +1,14 @@
+package variaveis;
+
+public class ManipulaString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String email = "xpTo@Itau-UniBanco.cOm.Br";
+		
+		System.out.println("Original: "+ email + "\nMinusculo" + email.ToIgnoreCase());
+
+	}
+
+}

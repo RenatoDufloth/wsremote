@@ -1,0 +1,19 @@
+package variaveis;
+
+public class Notas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		String aluno = JOptionPane.showInputDialog("Digite nome do Aluno");
+		double nota1 = Double.parseDouble(JOptionPane.showInputDialog("Digite a primeira nota"));
+		double nota2 = Double.parseDouble(JOptionPane.showInputDialog("Digite a segunda nota"));
+	    double media = (nota1  + nota2) / 2 ;
+	    double faltante = 10 - media;		
+		
+	    System.out.printf("Aluno %s, sua média obtida foi: %.2f para 10 faltaram: %.2f", aluno, media, faltante);
+
+	}
+
+}
