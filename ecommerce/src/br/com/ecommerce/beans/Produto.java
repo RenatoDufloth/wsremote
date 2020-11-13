@@ -1,6 +1,8 @@
 package br.com.ecommerce.beans;
 
-public class Produto {
+import br.com.ecommerce.util.PadraoProduto;
+
+public class Produto implements PadraoProduto {
 
 	private String descricao;
 	private float valorVenda;
@@ -67,6 +69,18 @@ public class Produto {
 	}
 	public void setQtde(int qtde) {
 		this.qtde = qtde;
+	}
+
+	@Override
+	public float retornarImposto() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public float obterValorPromocao(float param) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 	
