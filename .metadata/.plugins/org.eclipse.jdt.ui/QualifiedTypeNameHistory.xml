@@ -5,5 +5,10 @@
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="br.com.bankofoz.beans.Corrente"/>
 <fullyQualifiedTypeName name="br.com.bankofoz.util.Magica"/>
+<fullyQualifiedTypeName name="br.com.excecoes.tratamento.MInhaExcecao"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="br.com.colecoes.util.Magica"/>
+<fullyQualifiedTypeName name="br.com.colecoes.beans.Cargo"/>
 </qualifiedTypeNameHistroy>

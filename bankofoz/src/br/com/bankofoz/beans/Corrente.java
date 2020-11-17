@@ -2,6 +2,14 @@ package br.com.bankofoz.beans;
 
 import br.com.bankofoz.util.PadraoConta;
 
+/*
+ * Polimofismo:ocorre quando temos dois metodos com o mesmo nome,
+ * fazendo ações diferentes.
+ * Override (sobrescrita) :  quando os metodos estao em classes diferentes (getAll())
+ * Overload (sobrecarga): quando os metodos estão na mesma classe
+ * (devem possuir assinaturas diferentes - parametros)
+ */
+
 public class Corrente extends Conta  implements PadraoConta {
 	private float limite;
 	private float taxa;
